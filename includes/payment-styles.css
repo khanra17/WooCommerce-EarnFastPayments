@@ -1,0 +1,227 @@
+/* Global styles and resets can be defined here */
+
+/* Payment Container */
+.payment-container {
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid rgba(84, 84, 84, 0.15);
+    padding: 18px;
+    background-color: #f7f7f7;
+}
+
+.payment-container-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Payment Text */
+.payment-text {
+    text-transform: uppercase;
+    color: #5a5a5a;
+    font-size: 13px;
+    margin: 0 0 10px !important;
+}
+
+/* CSS for the close button */
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.3s ease; /* Add a transition for smooth animation */
+}
+
+.close-icon:before,
+.close-icon:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    height: 2px;
+    background-color: white;
+    transform: translate(-50%, -50%) rotate(45deg);
+    transition: transform 0.3s ease; /* Add a transition for smooth animation */
+}
+
+.close-icon:after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* Add a hover effect to rotate the icon */
+.close-icon:hover:before,
+.close-icon:hover:after {
+    transform: translate(-50%, -50%) rotate(0deg); /* Rotate back to 0 degrees on hover */
+}
+
+/* Payment Dialog */
+.payment-dialog {
+    display: none;
+    position: absolute;
+    /* position: relative; */
+    max-width: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Payment Header */
+.payment-header {
+    background: #0659e3;
+    border-radius: 4px 4px 0 0;
+    padding: 16px;
+    color: #fff;
+}
+
+/* Store Info */
+.store-info {
+    margin-bottom: 10px;
+}
+
+/* Main Content */
+.main-content {
+    margin: 16px;
+    padding: 16px;
+    text-align: center;
+    border: #5a5a5a27 0.1px solid;
+}
+
+/* Store Name */
+.store-name {
+    font-size: 16px;
+    color: #fff;
+    display: inline-block;
+}
+
+/* Order ID */
+.order-id {
+    font-size: 11px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 5px;
+    border-radius: 0;
+    color: #fff;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+/* QR Code Container */
+.qr-code-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* QR Code */
+.qr-code {
+    border: 1px solid #ccc;
+    padding: 2px;
+    display: inline-block;
+}
+
+/* UPI ID */
+.upi-id {
+    margin: 8px auto;
+    font-size: 12px;
+    background-color: rgba(122, 122, 122, 0.07);
+    padding: 5px;
+    border-radius: 0;
+}
+
+/* Installed Apps Section */
+.installed-apps-section {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+}
+
+/* Installed Apps Text */
+.installed-apps-text {
+    margin-bottom: 10px;
+}
+
+/* Payment Methods */
+.payment-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* UPI Button */
+.upi-button {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* UPI Button Image */
+.upi-button img {
+    max-height: 20px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Button Text */
+.button-text {
+    font-size: 11px;
+}
+
+/* UPI Button Hover */
+.upi-button:hover {
+    background-color: #f7f7f7;
+}
+
+/* Amount */
+.amount {
+    color: #171a1e;
+    font-size: 16px;
+}
+
+/* Payment Button */
+.payment-button {
+    background: #0659e3;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Payment Button Hover */
+.payment-button:hover {
+    background: #0447b3;
+}
+
+/* Payment Footer */
+.payment-footer {
+    background: #fff;
+    border-radius: 0 0 4px 4px;
+    padding: 12px;
+    margin-top: 18px;
+    display: flex;
+    box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    align-items: center;
+}
